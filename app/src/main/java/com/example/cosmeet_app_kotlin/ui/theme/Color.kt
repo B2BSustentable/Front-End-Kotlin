@@ -1,4 +1,4 @@
-package com.example.app_cosmeet.ui.theme
+package com.example.cosmeet_app_kotlin.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".intro_fourthFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="314dp"
+        android:layout_height="351dp"
+        app:cardCornerRadius="33dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="65dp">
+
+        <ImageView
+            android:layout_width="314dp"
+            android:layout_height="351dp"
+            android:src="@drawable/divulga_intro"
+            app:cardCornerRadius="33dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="268dp"
+        android:fontFamily="@font/roboto"
+        android:text="Divulgue Suas"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="236dp"
+        android:fontFamily="@font/roboto"
+        android:text="Negócio"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:layout_width="357dp"
+        android:layout_height="59dp"
+        android:background="@drawable/button_one"
+        android:text="Crie sua conta"
+        android:textColor="@color/textCosmeet"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="598dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="346dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="168dp"
+        android:fontFamily="@font/roboto"
+        android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore porro."
+        android:textColor="@color/textCosmeetObs"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/roboto"
+        android:text="Já possuo uma conta"
+        android:textColor="@color/textCosmeet2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.app_cosmeet
+package com.example.cosmeet_app_kotlin
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,15 +10,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.app_cosmeet.ui.theme.AppCosmeetTheme
+import com.example.cosmeet_app_kotlin.ui.theme.Cosmeet_app_kotlinTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppCosmeetTheme {
+            Cosmeet_app_kotlinTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
                     Greeting("Android")
                 }
             }
@@ -29,15 +32,15 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-            text = "Hello $name!",
-            modifier = modifier
+        text = "Hello $name!",
+        modifier = modifier
     )
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    AppCosmeetTheme {
+    Cosmeet_app_kotlinTheme {
         Greeting("Android")
     }
 }
