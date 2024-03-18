@@ -1,4 +1,4 @@
-package com.example.cosmeet_app_kotlin
+package com.example.cosmeet_app
 
 import org.junit.Test
 

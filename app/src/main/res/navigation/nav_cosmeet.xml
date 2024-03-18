@@ -2,39 +2,48 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_cosmeet"
+    android:id="@+id/nav_cosmeet"
     app:startDestination="@id/intro_firstFragment">
 
     <fragment
         android:id="@+id/intro_firstFragment"
-        android:name="com.example.cosmeet_app_kotlin.intro_firstFragment"
+        android:name="com.example.cosmeet_app.fragment_intro_first"
         android:label="fragment_intro_first"
         tools:layout="@layout/fragment_intro_first" >
         <action
-            android:id="@+id/action_intro_firstFragment_to_intro_secondFragment"
+            android:id="@+id/navigateTointro_secondFragment"
             app:destination="@id/intro_secondFragment" />
     </fragment>
     <fragment
         android:id="@+id/intro_secondFragment"
-        android:name="com.example.cosmeet_app_kotlin.intro_secondFragment"
+        android:name="com.example.cosmeet_app.fragment_intro_second"
         android:label="fragment_intro_second"
         tools:layout="@layout/fragment_intro_second" >
         <action
-            android:id="@+id/action_intro_secondFragment_to_intro_thirdFragment"
+            android:id="@+id/navigateTointro_thirdFragment"
             app:destination="@id/intro_thirdFragment" />
     </fragment>
     <fragment
         android:id="@+id/intro_thirdFragment"
-        android:name="com.example.cosmeet_app_kotlin.intro_thirdFragment"
+        android:name="com.example.cosmeet_app.fragment_intro_third"
         android:label="fragment_intro_third"
         tools:layout="@layout/fragment_intro_third" >
         <action
-            android:id="@+id/action_intro_thirdFragment_to_intro_fourthFragment"
+            android:id="@+id/navigateTointro_fourthFragment"
             app:destination="@id/intro_fourthFragment" />
     </fragment>
     <fragment
         android:id="@+id/intro_fourthFragment"
-        android:name="com.example.cosmeet_app_kotlin.intro_fourthFragment"
+        android:name="com.example.cosmeet_app.fragment_intro_fourth"
         android:label="fragment_intro_fourth"
-        tools:layout="@layout/fragment_intro_fourth" />
+        tools:layout="@layout/fragment_intro_fourth" >
+        <action
+            android:id="@+id/action_intro_fourthFragment_to_cadastro"
+            app:destination="@id/cadastro" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastro"
+        android:name="com.example.cosmeet_app.login"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_login" />
 </navigation>

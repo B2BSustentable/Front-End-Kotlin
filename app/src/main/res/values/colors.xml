@@ -11,4 +11,6 @@
     <color name="textCosmeet">#FAFAFA</color>
     <color name="textCosmeet2">#2A0B5E</color>
     <color name="textCosmeetObs">#777777</color>
+    <color name="textInput">#ECECEC</color>
+    <color name="background">#F7FAF8</color>
 </resources>

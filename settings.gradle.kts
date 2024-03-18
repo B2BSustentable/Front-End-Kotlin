@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "cosmeet_app_kotlin"
+rootProject.name = "cosmeet_app"
 include(":app")
- 
